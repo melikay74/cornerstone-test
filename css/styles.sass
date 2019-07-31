@@ -1,0 +1,118 @@
+$blue: #2ab8e4
+$smallFont: .4em
+
+// =rem($size)
+//   font-size: ($size / 16px) * 1rem
+  
+
+h1, h2, h3, h4, h5, p
+  margin: 0
+
+body
+  font-family: 'Roboto', Helvetica, sans-serif
+  padding: 0
+  margin: 0
+
+main
+  padding: 10px 15px
+  background-color: #f8f8f8
+
+section
+  padding-bottom: 10px
+
+.row
+  display: flex
+
+.container
+  margin: 0 auto
+
+#search
+  #searchInput
+    width: 100%
+    border: none
+    color: white
+    outline: none
+    font-size: .8em
+    font-weight: 300
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='13' viewBox='0 0 60 53' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M47 25C47 37.1503 37.1503 47 25 47C12.8497 47 3 37.1503 3 25C3 12.8497 12.8497 3 25 3C37.1503 3 47 12.8497 47 25ZM43.7171 41.5736C39.137 46.7422 32.449 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25C50 30.2801 48.3631 35.1778 45.5692 39.2135L59.8741 50.6574L58 53L43.7171 41.5736Z' fill='white'/%3e%3c/svg%3e ")
+    background-color: $blue
+    background-repeat: no-repeat
+    background-position: 10px center
+    padding: 10px 10px 10px 30px
+    &::placeholder
+      color: white
+      opacity: .5
+
+#intro
+  padding-bottom: 30px
+  .container
+    background-image: url('../assets/banner/banner-background.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-blend-mode: multiply
+    background-color: #545454
+    background-position: center
+    padding: 80px 15px 10px
+    .row
+      &.headings
+        color: white
+        display: block
+        padding-bottom: 60px
+        h1
+          font-size: 3em
+          span
+            font-style: italic
+            &.icon
+              background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='36' height='36' viewBox='0 0 123 123' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M61.5 0C95.4655 0 123 27.5345 123 61.5C123 95.4655 95.4655 123 61.5 123C27.5345 123 0 95.4655 0 61.5C0 27.5345 27.5345 0 61.5 0ZM45 34.2872L93 62L45 89.7128V34.2872Z' fill='%232AB8E4'/%3e%3c/svg%3e ")
+              background-repeat: no-repeat
+              opacity: .7
+              width: 36px
+              height: 36px
+              display: inline-block
+        h5
+          color: $blue
+          font-size: $smallFont
+        h1, h5
+          text-transform: uppercase
+          margin: 0 auto
+          text-align: center
+      &.quotes
+        display: flex
+        align-items: flex-end
+        padding-top: 60px
+        .quote-container
+          text-align: center
+          img
+            width: 100%
+            padding: 15px 0
+          .quote-text
+            color: white
+            font-size: 1em
+            text-transform: uppercase
+            font-weight: 700
+            padding: 0 50px 10px
+            letter-spacing: 1px
+          .quote-author
+            color: $blue
+            font-size: $smallFont
+            padding-bottom: 10px
+          .quote-mark
+            color: $blue
+            font-size: 3em
+            line-height: 1
+            font-weight: bold
+#orgs
+  .row
+    display: flex
+    justify-content: space-around
+    align-items: center
+    .org 
+      text-align: center
+      img
+        width: 55%
+      p
+        color: #7c7c7c
+        font-size: $smallFont
+            
+      
+

@@ -1,0 +1,1 @@
+Use the images in the comp as a reference as to how to size and place the images located in the slide folders.
