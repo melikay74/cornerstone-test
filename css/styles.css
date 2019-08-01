@@ -119,13 +119,36 @@ section {
   padding-top: 60px;
 }
 
+@media (max-width: 600px) {
+  #intro .container .row.quotes {
+    display: block;
+  }
+}
+
 #intro .container .row.quotes .quote-container {
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  #intro .container .row.quotes .quote-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 #intro .container .row.quotes .quote-container img {
   width: 100%;
   padding: 15px 0;
+}
+
+@media (max-width: 600px) {
+  #intro .container .row.quotes .quote-container img {
+    padding: 0;
+  }
 }
 
 #intro .container .row.quotes .quote-container .quote-text {
@@ -150,6 +173,10 @@ section {
   font-weight: bold;
 }
 
+#orgs {
+  padding-bottom: 70px;
+}
+
 #orgs .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,16 +188,72 @@ section {
           align-items: center;
 }
 
+@media (max-width: 600px) {
+  #orgs .row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 #orgs .row .org {
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  #orgs .row .org {
+    margin-top: 20px;
+  }
 }
 
 #orgs .row .org img {
   width: 55%;
 }
 
+@media (max-width: 600px) {
+  #orgs .row .org img {
+    width: 75%;
+  }
+}
+
 #orgs .row .org p {
   color: #7c7c7c;
   font-size: 0.4em;
+}
+
+@media (max-width: 600px) {
+  #orgs .row .org p {
+    font-size: 0.8em;
+  }
+}
+
+#imageFeed h1 {
+  text-align: center;
+  font-weight: 200;
+  color: #2ab8e4;
+  font-size: 1.9em;
+  padding-bottom: 10px;
+}
+
+#imageFeed h5 {
+  text-align: center;
+  color: #33435E;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+#imageFeed .pics {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#imageFeed .pics .pic {
+  margin: 5px;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
 }
 /*# sourceMappingURL=styles.css.map */

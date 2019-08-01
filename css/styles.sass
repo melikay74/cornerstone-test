@@ -1,9 +1,5 @@
 $blue: #2ab8e4
-$smallFont: .4em
-
-// =rem($size)
-//   font-size: ($size / 16px) * 1rem
-  
+$smallFont: .4em 
 
 h1, h2, h3, h4, h5, p
   margin: 0
@@ -80,11 +76,19 @@ section
         display: flex
         align-items: flex-end
         padding-top: 60px
+        @media (max-width: 600px)
+          display: block
+
         .quote-container
           text-align: center
+          @media (max-width: 600px)
+            display: flex
+            align-items: center
           img
             width: 100%
             padding: 15px 0
+            @media (max-width: 600px)
+              padding: 0
           .quote-text
             color: white
             font-size: 1em
@@ -102,17 +106,51 @@ section
             line-height: 1
             font-weight: bold
 #orgs
+  padding-bottom: 70px
   .row
     display: flex
     justify-content: space-around
     align-items: center
+    @media (max-width: 600px)
+      flex-wrap: wrap
     .org 
       text-align: center
+      @media (max-width: 600px)
+        margin-top: 20px
       img
         width: 55%
+        @media (max-width: 600px)
+          width: 75%
       p
         color: #7c7c7c
         font-size: $smallFont
+        @media (max-width: 600px)
+          font-size: 0.8em
+#imageFeed
+  h1
+    text-align: center
+    font-weight: 200
+    color: $blue
+    font-size: 1.9em
+    padding-bottom: 10px
+  
+  h5
+    text-align: center
+    color: #33435E
+    text-transform: uppercase
+    padding-bottom: 10px
+  
+  .pics
+    flex-wrap: wrap
+    justify-content: center
+    
+    .pic
+      margin: 5px
+      width: 200px
+      height: 200px
+      background-size: cover
+      background-position: center
+      
             
       
 
